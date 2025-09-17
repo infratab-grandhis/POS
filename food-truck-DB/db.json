@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": "2001",
+      "name": "Veg Burger",
+      "price": 200,
+      "image": "https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_960_720.jpg"
+    },
+    {
+      "id": "2002",
+      "name": "Pizza",
+      "price": 250,
+      "image": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg"
+    },
+    {
+      "id": "2003",
+      "name": "Lemonade",
+      "price": 200,
+      "image": "https://cdn.pixabay.com/photo/2015/07/01/20/38/drink-828258_960_720.jpg"
+    },
+    {
+      "id": "2004",
+      "name": "Chicken Wrap",
+      "price": 200,
+      "image": "https://cdn.pixabay.com/photo/2018/06/18/17/27/burrito-3482749_960_720.jpg"
+    }
+  ],
+
+  "inventory": [
+    { "productId": "2001", "unit": "pieces", "available": 25 },
+    { "productId": "2002", "unit": "servings", "available": 40 },
+    { "productId": "2003", "unit": "cups", "available": 60 },
+    { "productId": "2004", "unit": "wraps", "available": 18 }
+  ],
+
+  "customizationGroups": [
+    { "id": "c1", "name": "Cheese", "type": "addon" },
+    { "id": "c2", "name": "Spice Level", "type": "choice" },
+    { "id": "c3", "name": "Sauce", "type": "choice" },
+    { "id": "c4", "name": "Toppings", "type": "multi-select" }
+  ],
+
+  "customizationOptions": [
+    { "id": "c1o1", "groupId": "c1", "label": "Extra Cheese", "price": 50 },
+    { "id": "c1o2", "groupId": "c1", "label": "No Cheese", "price": 0 },
+
+    { "id": "c2o1", "groupId": "c2", "label": "Mild", "price": 0 },
+    { "id": "c2o2", "groupId": "c2", "label": "Medium", "price": 0 },
+    { "id": "c2o3", "groupId": "c2", "label": "Hot", "price": 0 },
+
+    { "id": "c3o1", "groupId": "c3", "label": "Ketchup", "price": 0 },
+    { "id": "c3o2", "groupId": "c3", "label": "Mayo", "price": 20 },
+    { "id": "c3o3", "groupId": "c3", "label": "BBQ", "price": 50 },
+
+    { "id": "c4o1", "groupId": "c4", "label": "Onions", "price": 20 },
+    { "id": "c4o2", "groupId": "c4", "label": "Tomatoes", "price": 10 },
+    { "id": "c4o3", "groupId": "c4", "label": "Lettuce", "price": 20 }
+  ],
+
+  "productCustomizations": [
+    { "productId": "2001", "groupId": "c1" },
+    { "productId": "2001", "groupId": "c2" },
+
+    { "productId": "2002", "groupId": "c3" },
+
+    { "productId": "2004", "groupId": "c4" }
+  ]
+}
