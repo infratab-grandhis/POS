@@ -20,8 +20,7 @@ const NavBar = styled("nav")(({ theme }) => ({
   zIndex: 2,
   padding: "10px",
   backgroundColor: theme.palette.primary.light,
-  color: theme.palette.primary.contrastText,
-  textAlign: 'center'
+  color: theme.palette.primary.contrastText
 }));
 
 const MainContent = styled("main")(({ theme }) => ({
@@ -35,7 +34,7 @@ const OuterLayout = (props) => {
   return (
     <LayoutContainer>
       <NavBar>
-        <Typography variant="h5">Food-Truck-Pos</Typography>
+        <Typography variant="h5" textAlign='center'>Food-Truck-Pos</Typography>
       </NavBar>
       <MainContent>{props.children}</MainContent>
     </LayoutContainer>
