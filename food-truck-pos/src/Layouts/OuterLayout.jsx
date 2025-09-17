@@ -1,5 +1,6 @@
 import React from "react";
-import { styled } from "@mui/material/styles"; // use MUI styled, not styled-components
+import { styled } from "@mui/material/styles";
+import Typography from '@mui/material/Typography';
 
 const LayoutContainer = styled("div")({
   display: "grid",
@@ -33,7 +34,9 @@ const MainContent = styled("main")(({ theme }) => ({
 const OuterLayout = (props) => {
   return (
     <LayoutContainer>
-      <NavBar>Food-Truck-Pos</NavBar>
+      <NavBar>
+        <Typography variant="h5">Food-Truck-Pos</Typography>
+      </NavBar>
       <MainContent>{props.children}</MainContent>
     </LayoutContainer>
   );
