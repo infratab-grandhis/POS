@@ -4,6 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import './App.css';
 import theme from './Theme.js';
 import Home from './Pages/Home.jsx';
+import Products from './Pages/Products.jsx';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/home" element={<Home/>} />
+          <Route path="/products" element={<Products/>} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

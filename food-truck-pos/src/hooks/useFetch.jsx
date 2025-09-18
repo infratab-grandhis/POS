@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-const useFetch = ({ url }) => {
+const useFetch = (url) => {
     const [isLoading, setLoading] = useState(false);
-    const [data, setData] = useState();
+    const [data, setData] = useState([]);
     const [error, setError] = useState();
 
     useEffect(() => {
